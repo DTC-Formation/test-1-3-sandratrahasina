@@ -1,0 +1,19 @@
+{
+    "taches": [
+        {
+            "nom": "Se connecter au wifi",
+            "deadline": "15/07/23",
+            "statut": "terminer"
+        },
+        {
+            "nom": "Lire l'ennoncer",
+            "deadline": "08/07/23",
+            "statut": "en cours"
+        },
+        {
+            "nom": "Dev",
+            "deadline": "01/08/23",
+            "statut": "en attente"
+        }
+    ]
+}
