@@ -37,12 +37,12 @@ while(True):
         continue
 
     if(int(option_menu)==3):
-        task_name_to_update = input("Inona no anaran'ilay tache hasiana fanovana")
+        task_name_to_update = input("Inona no anaran'ilay tache hasiana fanovana : ")
         for task in all_task_data_list:
             if task["nom"] == task_name_to_update:
                 task["nom"] = input("Omeo anarana vaovao izy : ")
                 daty_vaovao = input("Omeo deadline vaovao izy jj/mm/aa : ")
-                task["deadline"] = datetime.strptime(daty_vaovao, format_data)
+                task["deadline"] = datetime.strptime(daty_vaovao, format_data).strftime(format_data)
                 task["statut"] = input("Omeo statut vaovao izy : ")
                 break 
 
