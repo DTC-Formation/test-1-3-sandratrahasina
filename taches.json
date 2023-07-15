@@ -1,52 +1,28 @@
 {
-    "users" : [
+    "taches": [
         {
-            "nom_user": "rakoto",
-            "max_id" : 3,
-            "taches": [
-                {
-                    "id" : 1,
-                    "nom": "Se connecter au wifi",
-                    "deadline": "15/07/23",
-                    "statut": "terminer"
-                },
-                {
-                    "id" : 2,
-                    "nom": "Lire l'ennoncer",
-                    "deadline": "08/07/23",
-                    "statut": "en cours"
-                },
-                {
-                    "id" : 3,
-                    "nom": "Dev",
-                    "deadline": "01/08/23",
-                    "statut": "en attente"
-                }
-            ]
+            "id": 1,
+            "nom": "Se connecter au wifi",
+            "deadline": "15/07/23",
+            "statut": "terminer"
         },
         {
-            "nom_user": "rabe",
-            "max_id" : 3,
-            "taches": [
-                {
-                    "id" : 1,
-                    "nom": "Se connecter au wifi",
-                    "deadline": "15/07/23",
-                    "statut": "terminer"
-                },
-                {
-                    "id" : 2,
-                    "nom": "Lire l'ennoncer",
-                    "deadline": "08/07/23",
-                    "statut": "en cours"
-                },
-                {
-                    "id" : 3,
-                    "nom": "Dev",
-                    "deadline": "01/08/23",
-                    "statut": "en attente"
-                }
-            ]
+            "id": 2,
+            "nom": "Lire l'ennoncer",
+            "deadline": "08/07/23",
+            "statut": "en cours"
+        },
+        {
+            "id": 3,
+            "nom": "Dev",
+            "deadline": "01/08/23",
+            "statut": "en attente"
+        },
+        {
+            "id": 3,
+            "nom": "youtube",
+            "deadline": "16/07/23",
+            "statut": "En attente"
         }
     ]
 }

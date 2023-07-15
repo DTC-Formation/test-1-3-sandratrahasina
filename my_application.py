@@ -18,13 +18,13 @@ while(True):
             format_data = "%d/%m/%y"
 
             def show_day_difference(task_deadine):
-                d1 = datetime.strptime(task_deadine, "%d/%m/%y")
+                d1 = datetime.strptime(task_deadine, format_data)
                 d2 = datetime.now()
                 delta = d2 - d1
                 return f'Mbola manana {delta.days} andro ianao hanaovana azy'
 
             while(True):
-                option_menu = input("Tsindrio ny 1 raha hampiditra tache vaovao \nTsindrio ny 2 raha hijery io tache miandry anao \nTsindrio ny 3 raha hanisy fanovana \nTsindrio ny 4 raha hitahiry ireo fanovana rehetra natao \nTsindrio ny 5 raha hivoaka \nNy --- safidinao :  ")
+                option_menu = input("Tsindrio ny 1 raha hampiditra tache vaovao \nTsindrio ny 2 raha hijery io tache miandry anao \nTsindrio ny 3 raha hanisy fanovana \nTsindrio ny 4 raha hitahiry ireo fanovana rehetra natao \nTsindrio ny 5 raha hivoaka \n --- Ny safidinao :  ")
                 if(int(option_menu)==5):
                     print("Misaotra anao")
                     break
@@ -32,10 +32,12 @@ while(True):
                 if(int(option_menu)==1):
                     task_name = input("Ampidiro ny anaran'ilay tache : ")
                     task_dead_line = input("Ampidiro ny date tokony hahavitany jj/mm/aa : ")
+                    #print(datetime.strptime(task_dead_line, format_data))
+                    #print(.strftime("%m/%d/%y"))
                     new_task = {
                         "id": all_this_user_data["max_id"],
                         "nom": task_name, 
-                        "deadline": datetime.strptime(task_dead_line, format_data), 
+                        "deadline": task_dead_line, 
                         "statut": "En attente"
                     }
                     all_this_user_data["max_id"] = all_this_user_data["max_id"]+1
@@ -45,7 +47,7 @@ while(True):
                 
                 if(int(option_menu)==2):
                     for task in all_task_data_list:
-                        print("id: " + task["id"])
+                        print("id: " + str(task["id"]))
                         print("nom: " + task["nom"])
                         print("deadline: " + show_day_difference(task["deadline"]))
                         print("statut: " + task["statut"])
