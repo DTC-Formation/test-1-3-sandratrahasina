@@ -1,19 +1,52 @@
 {
-    "taches": [
+    "users" : [
         {
-            "nom": "Se connecter au wifi",
-            "deadline": "15/07/23",
-            "statut": "terminer"
+            "nom_user": "rakoto",
+            "max_id" : 3,
+            "taches": [
+                {
+                    "id" : 1,
+                    "nom": "Se connecter au wifi",
+                    "deadline": "15/07/23",
+                    "statut": "terminer"
+                },
+                {
+                    "id" : 2,
+                    "nom": "Lire l'ennoncer",
+                    "deadline": "08/07/23",
+                    "statut": "en cours"
+                },
+                {
+                    "id" : 3,
+                    "nom": "Dev",
+                    "deadline": "01/08/23",
+                    "statut": "en attente"
+                }
+            ]
         },
         {
-            "nom": "Lire l'ennoncer",
-            "deadline": "08/07/23",
-            "statut": "en cours"
-        },
-        {
-            "nom": "Dev",
-            "deadline": "01/08/23",
-            "statut": "en attente"
+            "nom_user": "rabe",
+            "max_id" : 3,
+            "taches": [
+                {
+                    "id" : 1,
+                    "nom": "Se connecter au wifi",
+                    "deadline": "15/07/23",
+                    "statut": "terminer"
+                },
+                {
+                    "id" : 2,
+                    "nom": "Lire l'ennoncer",
+                    "deadline": "08/07/23",
+                    "statut": "en cours"
+                },
+                {
+                    "id" : 3,
+                    "nom": "Dev",
+                    "deadline": "01/08/23",
+                    "statut": "en attente"
+                }
+            ]
         }
     ]
 }
